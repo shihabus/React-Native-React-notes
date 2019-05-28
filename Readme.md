@@ -8,8 +8,10 @@ Layout thread:
   
 RN have mainly 3 threads:
 
-  __Native UI thread
+  Native UI thread(Platform UI)
   
-  __Layout thread
+  Layout thread(Shadow tree)
   
-  __JS thread
+  JS thread
+
+The c/m between this threads are asynchronous. Platform UI thread is least loaded, where the JS thread is the most laoded as it have all the reconsilation, business logic and other stuff running.
