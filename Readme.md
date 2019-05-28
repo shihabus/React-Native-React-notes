@@ -20,4 +20,6 @@ But the RN bridge is being burned and a new JavaScript Interface(JSI) is coming 
 
 In React, the layout engine is more closer to the native layer(browser) and it creates the output which are more closer to the browser. RN is trying to bring the same implementation to using JSI. Now they have a UI Management called FABRIC which can do both synchronous and asynchronos UI updates.
 
+![architecture](https://github.com/shihabus/React-Native-React-notes/blob/master/Architecture.JPG)
+
 
