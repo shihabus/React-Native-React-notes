@@ -15,3 +15,9 @@ RN have mainly 3 threads:
   JS thread
 
 The c/m between this threads are asynchronous. Platform UI thread is least loaded, where the JS thread is the most laoded as it have all the reconsilation, business logic and other stuff running.
+
+But the RN bridge is being burned and a new JavaScript Interface(JSI) is coming up. 
+
+In React, the layout engine is more closer to the native layer(browser) and it creates the output which are more closer to the browser. RN is trying to bring the same implementation to using JSI. Now they have a UI Management called FABRIC which can do both synchronous and asynchronos UI updates.
+
+
