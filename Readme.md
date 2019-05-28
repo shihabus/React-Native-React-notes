@@ -16,10 +16,17 @@ RN have mainly 3 threads:
 
 The c/m between this threads are asynchronous. Platform UI thread is least loaded, where the JS thread is the most laoded as it have all the reconsilation, business logic and other stuff running.
 
+Upcoming
+
 But the RN bridge is being burned and a new JavaScript Interface(JSI) is coming up. 
 
-In React, the layout engine is more closer to the native layer(browser) and it creates the output which are more closer to the browser. RN is trying to bring the same implementation to using JSI. Now they have a UI Management called FABRIC which can do both synchronous and asynchronos UI updates.
+In React, the layout engine is more closer to the native layer(browser) and it creates the output which are more closer to the browser. RN is trying to bring the same implementation to using JSI. Now they have a UI Management called FABRIC which can do both synchronous and asynchronos UI updates. Fabric is trying to eliminate the bridge and letting the JS thread control the UI thread directly. For this native apis are directly exposed to JS thread and JS tread work on references made available by JSI. 
 
 ![architecture](https://github.com/shihabus/React-Native-React-notes/blob/master/Architecture.JPG)
+
+React Native Fabric
+
+(https://www.slideshare.net/axemclion/react-native-fabric-review20180725)
+(https://www.freecodecamp.org/news/how-react-native-constructs-app-layouts-and-how-fabric-is-about-to-change-it-dd4cb510d055/)
 
 
