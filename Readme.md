@@ -8,8 +8,8 @@ Layout thread:
   
 RN have mainly 3 threads:
 
-  Native UI thread
+  __Native UI thread
   
-  Layout thread
+  __Layout thread
   
-  JS thread
+  __JS thread
